@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Name | Academic & Software Portfolio</title>
+    <meta
+      name="description"
+      content="Personal portfolio showcasing academic projects, resume, GitHub, and LinkedIn."
+    />
+
+    <!-- Google Fonts: Clean & Readable -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container nav-container">
+        <!-- Put your name or initials here -->
+        <a href="#hero" class="nav-brand">
+          <span class="brand-badge">M</span>
+          <span>Manab Roy</span>
+        </a>
+
+        <!-- Navigation Links -->
+        <nav class="nav-menu">
+          <ul class="nav-links">
+            <li><a href="#hero" class="nav-link">Home</a></li>
+            <li><a href="#projects" class="nav-link">Academic Projects</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Resume Download Button -->
+        <div class="nav-actions">
+          <!-- Put your resume file inside assets/resume.pdf -->
+          <a
+            href="assets/Manab_Roy_Resume (3).pdf"
+            class="btn btn-primary btn-sm"
+            download="Manab_Roy_Resume (3).pdf"
+          >
+            <i class="fas fa-file-download"></i> Resume
+          </a>
+
+          <!-- Mobile Menu Toggle -->
+          <button
+            id="mobile-toggle"
+            class="mobile-toggle"
+            aria-label="Toggle navigation"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-drawer" class="mobile-drawer">
+      <ul class="mobile-nav-links">
+        <li><a href="#hero" class="mobile-nav-link">Home</a></li>
+        <li>
+          <a href="#projects" class="mobile-nav-link">Academic Projects</a>
+        </li>
+        <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+        <li><a href="#education" class="mobile-nav-link">Education</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+      <a
+        href="assets/resume.pdf"
+        class="btn btn-primary"
+        download="My_Resume.pdf"
+        style="margin-top: 1rem"
+      >
+        <i class="fas fa-file-download"></i> Download Resume (PDF)
+      </a>
+    </div>
+
+    <main>
+      <!-- ====================================================================
+         HERO SECTION - (PUT YOUR PERSONAL INFO HERE)
+         ==================================================================== -->
+      <section class="hero" id="hero">
+        <div class="container hero-container">
+          <div class="hero-content">
+            <div class="hero-badge">
+              <span class="badge-dot"></span> Open to Opportunities
+            </div>
+
+            <h1 class="hero-title">
+              Hi, I'm <span class="highlight">Manab Roy</span>
+            </h1>
+
+            <div class="hero-subtitle">
+              BCA Student & Aspiring Software Engineer
+            </div>
+
+            <p class="hero-bio">
+              Welcome to my portfolio! I build full stack web applications and
+              enjoy turning real-world problems into clean, working software.
+              Explore my projects below.
+            </p>
+
+            <!-- Action Buttons -->
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary btn-lg">
+                <i class="fas fa-laptop-code"></i> View Projects
+              </a>
+              <a
+                href="assets/Manab_Roy_Resume (3).pdf"
+                class="btn btn-secondary btn-lg"
+                download="Manab_Roy_Resume (3).pdf"
+              >
+                <i class="fas fa-file-pdf"></i> Download Resume
+              </a>
+              <a href="#contact" class="btn btn-outline btn-lg">
+                <i class="fas fa-envelope"></i> Contact Me
+              </a>
+            </div>
+
+            <!-- Social Links (PUT YOUR REAL GITHUB & LINKEDIN HERE) -->
+            <div class="social-links">
+              <a
+                href="https://www.linkedin.com/in/manab-roy-31503a383/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-btn"
+                title="LinkedIn Profile"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a
+                href="https://github.com/manabroy-81"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-btn"
+                title="GitHub Profile"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="manab81roy@gmail.com"
+                class="social-btn"
+                title="Send Email"
+              >
+                <i class="fas fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+         ACADEMIC PROJECTS SECTION - (PUT YOUR PROJECTS HERE)
+         ==================================================================== -->
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Academic Work</span>
+            <h2 class="section-title">Academic Projects</h2>
+          </div>
+
+          <div class="projects-grid">
+            <!-- PROJECT 1 -->
+            <article class="project-card">
+              <div class="project-header">
+                <span class="badge badge-academic">Final Year Project</span>
+                <span class="project-term">Oct 2026</span>
+              </div>
+              <h3 class="project-title">SkillNest</h3>
+              <p class="project-description">
+                SkillNest is a social platform where learners and developers
+                share posts, connect with each other,Built with
+                html,css,JavaScript, Node.js, Express, MongoDB, and Passport.js
+                authentication, with images stored on Cloudinary.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Html</span>
+                <span class="tag">css</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">Express</span>
+                <span class="tag">MongoDB</span>
+              </div>
+              <div class="project-footer">
+                <a
+                  href="https://github.com/yourusername/project-repo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-secondary btn-sm"
+                >
+                  <i class="fab fa-github"></i> GitHub Code
+                </a>
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-outline btn-sm"
+                >
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+              </div>
+            </article>
+
+            <!-- PROJECT 2 -->
+            <article class="project-card">
+              <div class="project-header">
+                <span class="badge badge-academic">Major Project</span>
+                <span class="project-term">Nov 2025</span>
+              </div>
+              <h3 class="project-title">Airbnb Clone</h3>
+              <p class="project-description">
+                Airbnb Clone is a full stack web application inspired by Airbnb,
+                where users can browse, create, edit, and delete property
+                listings. It includes user authentication and a responsive
+                interface built with Bootstrap. Built with Node.js, Express.js,
+                MongoDB, and Mongoose.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Bootstrap</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">Express</span>
+                <span class="tag">MongoDB</span>
+              </div>
+              <div class="project-footer">
+                <a
+                  href="https://github.com/manabroy-81/sigma-prime-project.git"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-secondary btn-sm"
+                >
+                  <i class="fab fa-github"></i> GitHub Code
+                </a>
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-outline btn-sm"
+                >
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+              </div>
+            </article>
+
+            <!-- PROJECT 3 -->
+            <article class="project-card">
+              <div class="project-header">
+                <span class="badge badge-academic">Academic Projects</span>
+                <span class="project-term">jun 2025</span>
+              </div>
+              <h3 class="project-title">Real-Time Weather Detection</h3>
+              <p class="project-description">
+                Real-Time Weather Detection is a web app that shows live weather
+                conditions for any state you select. It fetches real-time data
+                and displays it in a clean, easy-to-read interface. Built with
+                HTML, CSS, and JavaScript.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Html</span>
+                <span class="tag">Css</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <div class="project-footer">
+                <a
+                  href="https://github.com/manabroy-81/RealTime-WeatherApp.git"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-secondary btn-sm"
+                >
+                  <i class="fab fa-github"></i> GitHub Code
+                </a>
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-outline btn-sm"
+                >
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+         SKILLS SECTION - (PUT YOUR SKILLS HERE)
+         ==================================================================== -->
+      <section id="skills" class="section section-warm">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Competencies</span>
+            <h2 class="section-title">Technical Skills</h2>
+            <p class="section-desc">
+              Languages, frameworks, and developer tools you work with.
+            </p>
+          </div>
+
+          <div class="skills-grid">
+            <!-- Category 1 -->
+            <div class="skill-category-card">
+              <h3 class="skill-category-title">
+                <i class="fas fa-code"></i> Programming Languages
+              </h3>
+              <div class="skill-chips">
+                <span class="chip">Java</span>
+                <span class="chip">JavaScript</span>
+                <span class="chip">SQL</span>
+              </div>
+            </div>
+
+            <!-- Category 2 -->
+            <div class="skill-category-card">
+              <h3 class="skill-category-title">
+                <i class="fas fa-layer-group"></i> Frameworks & Web
+              </h3>
+              <div class="skill-chips">
+                <span class="chip">React.js</span>
+                <span class="chip">Node.js</span>
+                <span class="chip">Express</span>
+                <span class="chip">HTML5 / CSS3</span>
+                <span class="chip">Bootstrap</span>
+                <span class="chip">Tailwind css</span>
+                <span class="chip">REST APIs</span>
+              </div>
+            </div>
+
+            <!-- Category 3 -->
+            <div class="skill-category-card">
+              <h3 class="skill-category-title">
+                <i class="fas fa-book-open"></i> Core CS Concepts
+              </h3>
+              <div class="skill-chips">
+                <span class="chip">Data Structures</span>
+                <span class="chip">Algorithms</span>
+                <span class="chip">OOP</span>
+                <span class="chip">DBMS & SQL</span>
+                <span class="chip">Operating Systems</span>
+                <span class="chip">Computer Networks</span>
+              </div>
+            </div>
+
+            <!-- Category 4 -->
+            <div class="skill-category-card">
+              <h3 class="skill-category-title">
+                <i class="fas fa-tools"></i> Developer Tools
+              </h3>
+              <div class="skill-chips">
+                <span class="chip">Git & GitHub</span>
+                <span class="chip">VS Code</span>
+                <span class="chip">hoppscotch</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+         EDUCATION SECTION - (PUT YOUR COLLEGE / DEGREE HERE)
+         ==================================================================== -->
+      <section id="education" class="section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Academic Background</span>
+            <h2 class="section-title">Education</h2>
+            <p class="section-desc">
+              Bachelor of Computer Applications (BCA) | SB College of Management
+              Studies, | Bangalore City University | Aug 2024 - 2027 (Expected)
+              | Currently in 5th semester
+            </p>
+          </div>
+
+          <div class="education-card">
+            <div class="education-header">
+              <div>
+                <h3 class="education-degree">
+                  Bachelor of Computer Applications (BCA)
+                </h3>
+                <div class="education-school">
+                  <i class="fas fa-university"></i>SB College of Management
+                  Studies, Bangalore City University
+                </div>
+              </div>
+              <div class="education-meta">
+                <span class="education-period">2024 — 2027</span>
+                <span class="education-gpa"> Current / CGPA: 6.91 /10</span>
+              </div>
+            </div>
+            <div class="education-courses">
+              <strong>Key Relevant Coursework:</strong>
+              Data Structures & Algorithms, Database Management Systems,
+              Operating Systems, Computer Networks, Software Engineering.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+         RESUME DOWNLOAD BANNER
+         ==================================================================== -->
+      <section id="resume" class="section section-warm">
+        <div class="container">
+          <div class="resume-banner">
+            <div>
+              <h3 class="resume-title">Looking for my official resume?</h3>
+              <p class="resume-desc">
+                Download my complete resume in PDF format with detailed academic
+                projects, and contact info.
+              </p>
+            </div>
+            <div>
+              <!-- Place your PDF at assets/resume.pdf -->
+              <a
+                href="assets/Manab_Roy_Resume (3).pdf"
+                class="btn btn-primary btn-lg"
+                download="Manab_Roy_Resume (3).pdf"
+              >
+                <i class="fas fa-file-pdf"></i> Download Official Resume (PDF)
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+         CONTACT SECTION - (PUT YOUR CONTACT DETAILS HERE)
+         ==================================================================== -->
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Get In Touch</span>
+            <h2 class="section-title">Contact</h2>
+            <p class="section-desc">
+              Feel free to connect with me for project discussions, internships,
+              or academic collaboration.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <!-- Contact Info Cards -->
+            <div class="contact-cards">
+              <!-- Email -->
+              <div class="contact-card">
+                <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                <div>
+                  <div class="contact-label">Email</div>
+                  <a href="mailto:your.email@example.com" class="contact-value"
+                    >manab81roy@gmail.com</a
+                  >
+                </div>
+              </div>
+
+              <!-- LinkedIn -->
+              <div class="contact-card">
+                <div class="contact-icon">
+                  <i class="fab fa-linkedin-in"></i>
+                </div>
+                <div>
+                  <div class="contact-label">LinkedIn</div>
+                  <a
+                    href="https://www.linkedin.com/in/manab-roy-31503a383/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-value"
+                  >
+                    linkedin.com/in/yourusername
+                  </a>
+                </div>
+              </div>
+
+              <!-- GitHub -->
+              <div class="contact-card">
+                <div class="contact-icon"><i class="fab fa-github"></i></div>
+                <div>
+                  <div class="contact-label">GitHub</div>
+                  <a
+                    href="https://github.com/manabroy-81"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-value"
+                  >
+                    github.com/yourusername
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ====================================================================
+       FOOTER
+       ==================================================================== -->
+    <footer class="footer">
+      <div class="container footer-content">
+        <div><strong>Your Name</strong> &copy; 2025. All rights reserved.</div>
+        <div class="footer-links">
+          <a href="#hero">Home</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Simple JavaScript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
